@@ -1,21 +1,21 @@
-# GraphQL API Example
+# GraphQL API
 
-Este repositório contém um exemplo de uma API GraphQL construída com .NET. Ele permite realizar consultas em uma lista de tarefas (`TaskItem`) e inclui uma consulta que pode ser filtrada por `id`, `title` e `description`.
+This repository contains an example of a GraphQL API built with .NET. It allows you to query a list of tasks (TaskItem) and includes a query that can be filtered by id, title, and description.
 
-## Requisitos
+## Requirements
 
-- [.NET SDK 8](https://dotnet.microsoft.com/download/dotnet) ou superior
-- [SQLite](https://www.sqlite.org/download.html) para o banco de dados
+- [.NET SDK 8](https://dotnet.microsoft.com/download/dotnet) or later
+- [SQLite](https://www.sqlite.org/download.html) for the database
 
-## Como Criar e Rodar o Banco de Dados
+## How to Create and Run the Database
 
-### Passo 1: Criar o Banco de Dados `App.db`
+### Step 1: Create the `App.db` Database
 
-1. **Crie o banco de dados manualmente**: Para isso, você pode utilizar uma ferramenta como [DB Browser for SQLite](https://sqlitebrowser.org/), ou utilizar o SQLite diretamente no terminal para criar o banco de dados e a tabela.
+1. **Create the database manually**: You can use a tool like [DB Browser for SQLite](https://sqlitebrowser.org/) or use SQLite directly from the terminal to create the database and table.
 
-2. **Criar a Tabela Manualmente**:
+2. **Create the Table Manually**:
 
-   No DB Browser for SQLite ou ferramenta similar, crie uma nova base de dados chamada `App.db` dentro da pasta `GraphQL.API`. Em seguida, crie a tabela `Tasks` com a seguinte estrutura:
+   In DB Browser for SQLite or a similar tool, create a new database named `App.db` inside the `GraphQL.API`. folder. Then create the Tasks table with the following structure:
 
    ```sql
    CREATE TABLE Tasks (
@@ -25,9 +25,9 @@ Este repositório contém um exemplo de uma API GraphQL construída com .NET. El
    );
    ```
 
-3. **Inserir Dados**:
+3. **Insert Data**:
 
-   Após criar a tabela, insira dados reais para representar tarefas:
+   After creating the table, insert real data to represent tasks:
 
    ```sql
    INSERT INTO Tasks (Title, Description)
@@ -42,21 +42,21 @@ Este repositório contém um exemplo de uma API GraphQL construída com .NET. El
     ('Planejar viagem de negócios', 'Planejar viagem para a conferência em São Paulo na próxima semana');
    ```
 
-### Passo 2: Rodar o Projeto
+### Step 2: Run the Project
 
-Execute o projeto com o comando:
+Run the project with the command:
 
 ```
-dotnet run
+cd GraphQL.API && dotnet run
 ```
 
-O servidor será iniciado, e a API GraphQL estará disponível em http://localhost:5000/graphql.
+The server will start, and the GraphQL API will be available at http://localhost:5037/graphql.
 
-### Passo 3: Como Consumir a Query GraphQL
+### Step 3: How to Query the GraphQL API
 
-Você pode consumir a API usando um cliente GraphQL como Postman, Insomnia ou diretamente em uma interface como GraphiQL.
+You can consume the API using a GraphQL client such as Postman, Insomnia, or directly through a GraphiQL interface.
 
-Exemplo de Query:
+Example Query:
 
 ```graphql
 query {
@@ -68,7 +68,7 @@ query {
 }
 ```
 
-Exemplo de Resposta:
+Example Response:
 
 ```json
 {
