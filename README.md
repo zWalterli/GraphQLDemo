@@ -47,7 +47,7 @@ This repository contains an example of a GraphQL API built with .NET. It allows 
 Run the project with the command:
 
 ```
-cd GraphQL.API && dotnet run
+dotnet run
 ```
 
 The server will start, and the GraphQL API will be available at http://localhost:5037/graphql.
