@@ -32,14 +32,14 @@ This repository contains an example of a GraphQL API built with .NET. It allows 
    ```sql
    INSERT INTO Tasks (Title, Description)
     VALUES
-    ('Comprar leite', 'Comprar leite integral na loja mais próxima para o café da manhã'),
-    ('Reunião de equipe', 'Participar da reunião semanal de planejamento de sprint'),
-    ('Entregar relatório', 'Finalizar e enviar o relatório de vendas para o diretor'),
-    ('Revisão de código', 'Revisar o código da feature X para aprovação'),
-    ('Comprar ingressos para cinema', 'Comprar ingressos para o filme "Vingadores" na sexta-feira à noite'),
-    ('Almoçar com cliente', 'Almoçar com o cliente ABC para discutir novos projetos'),
-    ('Configurar servidor', 'Configurar o novo servidor de produção para a aplicação de vendas'),
-    ('Planejar viagem de negócios', 'Planejar viagem para a conferência em São Paulo na próxima semana');
+    ('Buy milk', 'Buy whole milk at the nearest store for breakfast'),
+    ('Team meeting', 'Attend the weekly sprint planning meeting'),
+    ('Submit report', 'Finish and send the sales report to the director'),
+    ('Code review', 'Review the code for feature X for approval'),
+    ('Buy movie tickets', 'Buy tickets for the movie "Avengers" on Friday night'),
+    ('Lunch with client', 'Have lunch with client ABC to discuss new projects'),
+    ('Configure server', 'Set up the new production server for the sales application'),
+    ('Plan business trip', 'Plan the trip to the conference in São Paulo next week');
    ```
 
 ### Step 2: Run the Project
